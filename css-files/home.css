@@ -317,3 +317,119 @@ footer {
     font-size: 0.9rem;
     color: #1e3dff;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .logo {
+        width: 30%;
+        margin-left: 0.5rem;
+    }
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    .top-right {
+        gap: 1rem;
+    }
+    .heading {
+        padding-top: 1.5rem;
+        height: auto;
+    }
+    .heading-container {
+        margin-left: 1.5rem;
+        gap: 0.7rem;
+    }
+    .nav2 {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+    .search-box {
+        width: 80%;
+        margin-left: 1rem;
+    }
+    .nav2-right {
+        margin-right: 1rem;
+        gap: 0.5rem;
+    }
+    .clg-box {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+    .clg-layer1, .clg-last-layer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .announcement-box {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .top-right {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .heading-container {
+        margin-left: 1rem;
+    }
+    .nav2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .search-box {
+        width: 100%;
+        margin-left: 0;
+    }
+    .clg-box {
+        width: 100%;
+        padding: 0.8rem;
+    }
+    .announcement-box {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1rem;
+    }
+    .nav-text, .nav-icon {
+        font-size: 0.8rem;
+    }
+    .heading-container {
+        margin-left: 0.5rem;
+        gap: 0.5rem;
+    }
+    .clg-name {
+        font-size: 1rem;
+    }
+    .clg-level {
+        font-size: 0.8rem;
+    }
+    .clg-degree, .one-liner {
+        font-size: 0.8rem;
+    }
+    .announcement-layer1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .read-more {
+        font-size: 0.8rem;
+    }
+}
