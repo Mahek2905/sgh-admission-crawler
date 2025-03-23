@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css-files/program.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-spider"></i></div>
+            <div class="logo-text">Admission Spider</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="back-option"><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back</a></div>
+        <div class="upper-box">
+            <div class="upper-box1">
+                <div class="clg-name">
+                    IIT Bombay - B.Tech Computer Science 
+                    <div class="clg-level">Undergraduate</div>
+                </div>
+                <div class="ld-container">
+                    <div class="location"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
+                    <div class="deadline"><i class="fa-solid fa-clock"></i> Deadline: April 15, 2025</div>
+                </div>
+                <div class="info-container">
+                    <div id="overview" class="tab-links active-link" onclick="opentab('overview-content')">Overview</div>
+                    <div id="requirements" class="tab-links" onclick="opentab('requirements-content')">Requirements</div>
+                    <div id="fee-scholarships" class="tab-links" onclick="opentab('fee-scholarships-content')">Fee & Scholarships</div>
+                </div>
+                <div class="info-content">
+                    <div id="overview-content" class="tab-contents active-tab"><p>The B.Tech in Computer Science and Engineering at IIT Bombay is a 4-year undergraduate program that provides comprehensive education in computer science fundamentals, software development, and emerging technologies. The program emphasizes both theoretical knowledge and practical applications through laboratory work and projects.</p></div>
+                    <div id="requirements-content" class="tab-contents"><p>Candidates must have completed their 10+2 education with at least 75% aggregate marks (65% for SC, ST, and PwD categories) from a recognized board. Admission is primarily based on the Joint Entrance Examination (JEE) Advanced rank. Prospective students must first qualify for JEE Main to be eligible for JEE Advanced.</p></div>
+                    <div id="fee-scholarships-content" class="tab-contents"><p>The total tuition fee for the B.Tech program is approximately ₹8,00,000. <br>One-time Admission Fee: ₹16,000<br>Hostel Fees: Approximately ₹2,94,200.<br>IIT Bombay offers various scholarships: Merit-based Scholarships, Need-based Financial Assistance and Government Scholarships.</p></div>
+                </div>
+            </div>
+
+            <div class="upper-box2">
+                <div class="title"><b>Important Dates</b></div>
+                <div class="app-start sidebar-layers">
+                    <div class="title">Application Start</div>
+                    <div class="start-date dates">Jan 15, 2025</div>
+                </div>
+                <div class="app-deadline sidebar-layers">
+                    <div class="title">Application Deadline</div>
+                    <div class="deadline-date dates">April 15, 2025</div>
+                </div>
+                <div class="doc-verify sidebar-layers">
+                    <div class="title">Document Verification</div>
+                    <div class="verify-date dates">May 1-15, 2024</div>
+                </div>
+                <div class="program-st sidebar-layers">
+                    <div class="title">Program Start</div>
+                    <div class="program-date dates">July 15, 2025</div>
+                </div>
+                <button>Contact Admission Office</button>
+            </div>
+        </div>
+
+        <div class="heading"><h3>Key Highlights</h3></div>
+        <div class="lower-box">
+            <div class="highlight-box">
+                <p><b>Duration</b></p><br>
+                <p>4 Years</p>
+            </div>
+            <div class="highlight-box">
+                <p><b>Intake</b></p><br>
+                <p>120 Students</p>
+            </div>
+            <div class="highlight-box">
+                <p><b>Language</b></p><br>
+                <p>English</p>
+            </div>
+            <div class="highlight-box">
+                <p><b>Accreditation</b></p><br>
+                <p>NBA Accredited</p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>© 2025 Admission Spider. All rights reserved.</footer>
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName) {
+            for(let tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for(let tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
