@@ -293,3 +293,168 @@ footer {
         display: block;
     }
 }
+
+/* Add these styles for announcement page */
+.announcement-nav2 {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 1rem;
+    align-items: center;
+}
+
+.search-box2 {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.search-input2 {
+    flex: 1;
+}
+
+.search-input2 input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+}
+
+.filter-icon {
+    color: #666;
+    text-decoration: none;
+}
+
+.announcement-types {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.announcement-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.announcement-box {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-layer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.announcement-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.type-box {
+    flex-shrink: 0;
+}
+
+.announcement-type {
+    background-color: #ffe1e1;
+    color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.one-liner {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.announcement-last-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-left {
+    display: flex;
+    gap: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.last-date, .organizers {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.read-more {
+    color: #1e3dff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Update responsive styles for announcements */
+@media (max-width: 1024px) {
+    .announcement-nav2 {
+        flex-wrap: wrap;
+    }
+    
+    .search-box2 {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .announcement-title {
+        font-size: 1.1rem;
+    }
+    
+    .last-left {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-nav2 {
+        margin: 1rem;
+    }
+    
+    .announcement-box {
+        padding: 1rem;
+    }
+    
+    .announcement-title {
+        font-size: 1rem;
+    }
+    
+    .announcement-type {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .one-liner {
+        font-size: 0.9rem;
+    }
+    
+    .last-left {
+        font-size: 0.8rem;
+    }
+}
