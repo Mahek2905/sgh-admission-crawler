@@ -106,14 +106,17 @@ header {
     justify-content: center;
     align-items: center;
 }
-#input-box {
+#input-box, #input-box2 {
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 18rem;
+    width: 262%;
     height: 2rem;
 }
-#input-box:focus {
+#input-box2 {
+    width: 688%;
+}
+#input-box, #input-box2:focus {
     outline: none;
 }
 
