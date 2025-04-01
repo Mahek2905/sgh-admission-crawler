@@ -17,7 +17,7 @@ header {
     background: linear-gradient(to right, #01ced1, #00d0f6, #1e3dff);
     color: #fff;
     height: 7vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -149,6 +149,9 @@ header {
 }
 .nav2-select::-webkit-scrollbar {
     display: none;
+}
+.nav2-select, .announcement-types:focus {
+    outline: none;
 }
 
 /* List of Colleges */
