@@ -5,8 +5,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #f9fafc;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -98,7 +100,7 @@ a {
 }
 
 .info-container {
-    height: 2.5rem;
+    height: 10%;
     color: rgb(124, 123, 123);
     display: flex;
     justify-content: flex-start;
@@ -124,7 +126,7 @@ a {
     width: 100%;
 }
 
-.tab-contents p {
+.tab-contents {
     background: #f1f1f1;
     color: rgb(124, 123, 123);
     border-radius: 1rem;
