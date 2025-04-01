@@ -6,10 +6,14 @@
 
 body {
     background-color: #f9fafc;
+    min-height: 100%;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+main {
+    flex-grow: 1;
 }
 
 

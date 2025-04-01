@@ -1,3 +1,5 @@
+// Home Page
+
 const searchInput = document.getElementById('input-box');
 const levelSelect = document.querySelector('.level-selection select');
 const locationSelect = document.querySelector('.location-selection select');
