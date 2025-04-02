@@ -115,7 +115,7 @@ header {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     /* width: stretch; */
-    flex-grow: 2;
+    flex-grow: 1;
     height: 2rem;
 }
 #input-box {
