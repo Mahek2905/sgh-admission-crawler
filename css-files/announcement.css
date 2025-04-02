@@ -17,10 +17,11 @@ body::-webkit-scrollbar {
 }
 
 main {
-    flex-grow: 1;
+    width: 90%;
+    flex: 1;
 }
 
- /* Header */
+/* Header */
 header {
     background: linear-gradient(to right, #01ced1, #00d0f6, #1e3dff);
     color: #fff;
@@ -74,7 +75,7 @@ header {
 }
 .heading-container {
     margin-bottom: 1rem;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
     gap: 0.9rem;
@@ -84,21 +85,21 @@ header {
     color: rgb(144, 141, 141);
 }
 
- /* Nav2 */
- .nav2 {
-    margin-top: 1rem;
-    height: 4rem;
+.announcement-nav2 {
+    margin: 3rem 3rem 1rem 3rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 3rem;
 }
-.search-box {
-    display: flex;
-    margin-left: 2.5rem;
-    width: 30%;
-    height: 2rem;
-    border-radius: 5px;
+.search-box2 {
     border: 0.5px solid rgb(189, 182, 182);
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
 }
 .search-icon {
     background-color: white;
@@ -110,7 +111,20 @@ header {
     justify-content: center;
     align-items: center;
 }
-#input-box {
+/* .filter-icon {
+    text-decoration: none;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 123, 123);
+    border: none;
+    background: none;
+    cursor: pointer;
+} */
+#input-box2 {
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -118,78 +132,62 @@ header {
     flex-grow: 2;
     height: 2rem;
 }
-#input-box {
+#input-box2:focus {
     outline: none;
 }
 
-.nav2-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1.5rem;
-    gap: 1rem;
-}
-/* .sort-icon {
-    height: 2rem;
-    width: 2rem;
-    border: none;
-    background: none;
-    color: black;
-    font-size: 1.2rem;
-    text-decoration: none;
-    cursor: pointer;
-} */
-.nav2-select {
-    background-color: #d9d9d9;
-    height: 2rem;
-    border: none;
+.announcement-types {
+    border: 0.5px solid rgb(189, 182, 182);
     border-radius: 5px;
-    padding: 0.4rem;
+    height: 2.5rem;
+    width: 15%;
+    color: rgb(124, 123, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.6rem;
 }
-.nav2-select {
+.announcement-types:hover {
     cursor: pointer;
 }
-.nav2-select::-webkit-scrollbar {
-    display: none;
-}
-.nav2-select {
+.announcement-types:focus {
     outline: none;
 }
 
-/* List of Colleges */
-.clg-list {
+.announcement-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    margin-left: 3rem;
     width: 100%;
-    height: stretch;
-    gap: 1.3rem;
+    gap: 2.5rem;
 }
-.clg-box {
+.announcement-box {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
     color: black;
-    height: 16rem;
-    width: 40rem;
+    height: 9.5rem;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1.7rem;
 }
-
-.clg-layer1, .clg-last-layer {
+.announcement-layer1 {
+    height: 3rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
-    width: 40rem;
 }
-.clg-name {
+
+.announcement-title {
     font-size: 1.3rem;
 }
-.clg-level-box {
+
+.type-box {
     height: 2.7rem;
     width: 7.3rem;
     background-color: #ffe1e1;
@@ -197,48 +195,45 @@ header {
     text-align: center;
     align-content: center;
 }
-
-.clg-level {
+.announcement-type {
     font-size: 0.9rem;
     color: red;
 }
-.clg-degree, .one-liner {
+.one-liner {
     height: 3rem;
     font-size: 0.9rem;
     color: rgb(124, 123, 123);
     align-content: center;
 }
-.clg-layer2 {
+
+.announcement-last-layer {
+    font-size: 0.9rem;
+    color: rgb(124, 123, 123);
     height: 3rem;
-    width: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.last-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.5rem;
-    font-size: 0.9rem;
-    color: rgb(124, 123, 123);
+    gap: 0.9rem;
 }
-.state-box, .deadline-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4rem;
-}
-.clg-last-layer {
-    font-size: 0.9rem;
-    color: rgb(124, 123, 123);
-}
-.clg-details {
-    color: #01ced1;
+.read-more {
     text-decoration: none;
-}
-.clg-details:hover {
+    font-size: 0.9rem;
     color: #1e3dff;
 }
 
 /* Footer */
 footer {
-    width: 100vw;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     height: 3rem;
     background: linear-gradient(to right, #0a2945, #162e6d);
     color: white;
@@ -246,16 +241,18 @@ footer {
     text-align: center;
 }
 
-
-/*  Responsive design code */
+/* Responsive design code */
 @media (max-width: 480px) { /* Mobile (Portrait) */
+    main {
+        width: 87%;
+    }
     header {
         height: 5%;
         flex-direction: start;
         /* gap: 3rem; */
     }
     .logo {
-        width: 50%;
+        width: 45%;
         gap: 0.5rem;
     }
     .logo-icon {
@@ -273,7 +270,7 @@ footer {
     }
 
     .heading {
-        padding-top: 1.2rem;
+        padding-top: 3.3rem;
     }
     .heading-container {
         margin-left: 1rem;
@@ -284,56 +281,48 @@ footer {
     .heading-info {
         font-size: 0.8rem;
     }
-    .nav2 {
+
+    .announcement-nav2 {
         margin-top: 0.5rem;
-        flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 0.5rem;
         margin: 0 1rem;
     }
-    .search-box {
-        width: 100%;
-        flex-grow: 1;
-        margin-left: 0;
+    .announcement-types {
+        flex-grow: 1.2;
     }
-    .nav2-right {
-        width: 100%;
-        gap: 1.4rem;
-    }
-    .clg-list {
+
+    .announcement-list {
         height: auto;
+        width: 100%;
         margin-top: 2rem;
+        margin-left: 1.5rem;
+        flex-direction: column;
     }
-    .clg-box {
-        width: 70%;
-        height: 43%;
-        padding: 1.5rem;
+    .announcement-box {
+        width: 80%;
+        height: 35%;
+        padding: 1.2rem;
     }
-    .clg-layer1 {
+    .announcement-layer1 {
         justify-content: space-between;
     }
-    .clg-name {
+    .announcement-title {
         font-size: 1rem;
-        width: 20%;
     }
-    .clg-degree {
-        height: 2.5rem;
-    }
-    .clg-layer2 {
+    .announcement-last-layer {
+        width: 100%;
         gap: 1rem;
     }
-    .clg-last-layer {
-        width: 100%;
-        gap: 0.3rem;
+    .announcement-last-left {
+        justify-content: space-between;
     }
-    .last-updated {
-        width: 40%;
+    .last-date, .organizers {
+        text-align: center;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) { /* Mobile (Landscape) and small tablets */
-    * {
-        max-width: 100%;
-    }
     header {
         height: 6%;
     }
@@ -361,54 +350,56 @@ footer {
         font-size: 0.8rem;
     }
 
+    .heading {
+        padding-top: 3rem;
+    }
     .heading-container {
         margin-left: 1rem;
     }
-    .nav2 {
+    .heading-title {
+        font-size: 0.9rem;
+    }
+    .heading-info {
+        font-size: 0.8rem;
+    }
+
+    .announcement-nav2 {
         padding-top: 1rem;
-        flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 0.5rem;
         margin: 0 1rem;
     }
-    .search-box {
-        width: 100%;
-        flex-grow: 1;
-        margin-left: 0;
+    .announcement-types {
+        flex-grow: 1.2;
     }
-    .nav2-right {
-        width: 100%;
-        gap: 1.4rem;
-    }
-    .clg-list {
+
+    .announcement-list {
         height: auto;
-        max-width: 100%;
-        margin-top: 2rem;
-    }
-    .clg-box {
-        width: 80%;
-        height: 43%;
-        padding: 1.5rem;
-    }
-    .clg-layer1 {
         width: 100%;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        flex-direction: column;
+    }
+    .announcement-box {
+        width: 80%;
+        height: 35%;
+        padding: 1.2rem;
+    }
+    .announcement-layer1 {
         justify-content: space-between;
     }
-    .clg-name {
+    .announcement-title {
         font-size: 1rem;
-        width: 20%;
     }
-    .clg-degree {
-        height: 2.5rem;
-    }
-    .clg-layer2 {
+    .announcement-last-layer {
+        width: 100%;
         gap: 1rem;
     }
-    .clg-last-layer {
-        width: 100%;
-        gap: 0.3rem;
+    .announcement-last-left {
+        justify-content: space-between;
     }
-    .last-updated {
-        width: 40%;
+    .last-date, .organizers {
+        text-align: center;
     }
 }
 
@@ -416,37 +407,70 @@ footer {
     .logo {
         width: 50%;
     }
-    .nav2 {
-        justify-content: space-evenly;
+    .announcement-nav2 {
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+    .announcement-types {
+        flex-grow: 1.2;
+    }
+
+    .announcement-list {
+        height: auto;
+        width: 100%;
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .announcement-box {
+        width: 80%;
+        height: 30%;
+        padding: 1.2rem;
+    }
+    .announcement-layer1 {
+        justify-content: space-between;
+    }
+    .announcement-title {
+        font-size: 1.2rem;
+    }
+    .announcement-last-layer {
+        width: 100%;
         gap: 1rem;
     }
-    .search-box {
-        flex-grow: 1;
+    .announcement-last-left {
+        justify-content: space-between;
     }
-    .clg-box {
-        height: 14rem;
+    .last-date, .organizers {
+        text-align: center;
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) { /* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
     .logo {
         width: 50%;
     }
-    .nav2 {
-        margin: 0;
-        justify-content: space-evenly;
-        gap: 1rem;
+    .announcement-nav2 {
+        margin-top: 1rem;
+        gap: 0.5rem;
     }
-    .search-box {
-        flex-grow: 1;
+    .announcement-types {
+        flex-grow: 1.2;
     }
-    .clg-box {
-        height: 14rem;
-        font-size: 0.9rem;
-        padding: 1.5rem;
+
+    .announcement-list {
+        height: auto;
+        width: 100%;
+        margin-top: 2.5rem;
+        gap: 1.2rem;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    .clg-name {
-        font-size: 1.5rem;
+    .announcement-title {
+        font-size: 1.2rem;
+    }
+    .one-liner {
+        height: 3.5rem;
     }
 }
 
@@ -484,27 +508,16 @@ footer {
         display: flex;
         align-items: center;
     }
-    #input-box, .nav2-select {
+    .announcement-types {
         height: 3rem;
         font-size: 1rem;
     }
 
-    .clg-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2.5rem;
-    }
-    .clg-box {
-        width: 40%;
-    }
-    .clg-name {
+    .announcement-title{
         font-size: 1.5rem;
     }
-    .clg-level-box {
-        height: 3rem;
-        width: 10rem;
+    .announcement-type, .one-liner, .last-left, .read-more {
+        font-size: 1.1rem;
     }
-    .clg-level, .clg-degree, .one-liner, .clg-layer2, .clg-last-layer {
-        font-size: 1.2rem;
-    }
+
 }
