@@ -73,6 +73,9 @@ header {
     justify-content: flex-end;
     align-items: flex-start;
 }
+.heading-container h1 {
+    font-weight: normal;
+}
 .heading-container {
     margin-bottom: 1rem;
     margin-left: 3rem;
@@ -477,19 +480,19 @@ footer {
 
 @media (min-width: 1441px) {
     header {
-        height: 8%;
+        height: 7%;
     }
     .logo {
         width: 50%;
     }
-    .logo-icon, .logo-text {
-        font-size: 2.5rem;
-    }
-    .logo-text {
+    .logo-icon {
         font-size: 2rem;
     }
+    .logo-text {
+        font-size: 1.7rem;
+    }
     .nav-icon, .nav-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .top-right {
         gap: 2rem;
