@@ -9,8 +9,8 @@ const collegeBody = document.querySelector('.clg-list');
 // Pagination
 const entriesPerPageSelect = document.querySelector('.page-select');
 const paginationContainer = document.querySelector('.page-numbers-container');
-const prevButton = document.querySelector('.pagination-bottom button:first-child');
-const nextButton = document.querySelector('.pagination-bottom button:last-child');
+const prevButton = document.querySelector('#prev-button');
+const nextButton = document.querySelector('#next-button');
 const collegeBoxes = document.querySelectorAll('.clg-box');
 
 // Function to filter colleges based on search and dropdown values
