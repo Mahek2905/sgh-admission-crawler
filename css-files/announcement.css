@@ -167,7 +167,7 @@ header {
 }
 .announcement-box {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 2rem;
+    border-radius: 1rem;
     color: black;
     height: 9.5rem;
     width: 40%;
@@ -266,7 +266,7 @@ footer {
     }
     .top-right {
         /* margin-right: 50%; */
-        gap: 0.8rem;
+        gap: 1.3rem;
     }
 
     .heading {
@@ -298,11 +298,12 @@ footer {
         margin-top: 2rem;
         margin-left: 1.5rem;
         flex-direction: column;
+        gap: 1.3rem;
     }
     .announcement-box {
-        width: 80%;
+        width: 85%;
         height: 35%;
-        padding: 1.2rem;
+        padding: 1rem;
     }
     .announcement-layer1 {
         justify-content: space-between;

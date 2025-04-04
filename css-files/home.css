@@ -156,6 +156,18 @@ header {
     outline: none;
 }
 
+/* Pagination Top */
+.pagination-top {
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.page-select {
+    width: 4rem;
+    height: 1.8rem;
+}
+
 /* List of Colleges */
 .clg-list {
     display: flex;
@@ -163,7 +175,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     width: 100%;
     height: stretch;
     gap: 1.3rem;
@@ -236,6 +248,38 @@ header {
     color: #1e3dff;
 }
 
+/* Pagination Bottom */
+.pagination-bottom {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.page-numbers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-bottom button {
+    height: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;    
+}
+.page-numbers-container button {
+    width: 2rem;
+    align-content: center;
+}
+.page-numbers-container button.active {
+    background-color: #d9d9d9;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
 /* Footer */
 footer {
     width: 100vw;
@@ -299,6 +343,12 @@ footer {
         width: 100%;
         gap: 1.4rem;
     }
+
+    .pagination-top {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
     .clg-list {
         height: auto;
         margin-top: 2rem;
@@ -327,6 +377,10 @@ footer {
     }
     .last-updated {
         width: 40%;
+    }
+
+    .pagination-bottom {
+        margin-bottom: 1rem;
     }
 }
 
@@ -425,6 +479,9 @@ footer {
     }
     .clg-box {
         height: 14rem;
+    }
+    .pagination-bottom button{
+        font-size: 1rem;
     }
 }
 
