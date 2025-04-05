@@ -22,7 +22,7 @@ main {
 
  /* Header */
 header {
-    background: linear-gradient(to right, #01ced1, #00d0f6, #1e3dff);
+    background: #122c5e; /*linear-gradient(to right, #01ced1, #00d0f6, #1e3dff);*/
     color: #fff;
     height: 7%;
     width: 100%;
@@ -169,11 +169,16 @@ header {
 .page-select {
     width: 4rem;
     height: 1.8rem;
+    border: 0.5px solid rgb(189, 182, 182);
+}
+.page-select:focus {
+    outline: none;
 }
 
 /* List of Colleges */
 .clg-list {
     display: flex;
+    /* grid-template-columns: 100% 100%; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -181,11 +186,11 @@ header {
     margin-bottom: 3rem;
     width: 100%;
     height: stretch;
-    gap: 1.3rem;
+    gap: 2rem;
 }
 .clg-box {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 2rem;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
     color: black;
     height: 16rem;
     width: 40rem;
@@ -207,7 +212,7 @@ header {
 .clg-level-box {
     height: 2.7rem;
     width: 7.3rem;
-    background-color: #ffe1e1;
+    background-color: #d3d9e1;
     border-radius: 1.7rem;
     text-align: center;
     align-content: center;
@@ -215,7 +220,7 @@ header {
 
 .clg-level {
     font-size: 0.9rem;
-    color: red;
+    color: #122c5e;
 }
 .clg-degree, .one-liner {
     height: 3rem;
@@ -244,11 +249,11 @@ header {
     color: rgb(124, 123, 123);
 }
 .clg-details {
-    color: #01ced1;
+    color: #193569;
     text-decoration: none;
 }
 .clg-details:hover {
-    color: #1e3dff;
+    color: #365692;
 }
 
 /* Pagination Bottom */
@@ -287,7 +292,7 @@ header {
 footer {
     width: 100vw;
     height: 3rem;
-    background: linear-gradient(to right, #0a2945, #162e6d);
+    background: #0f2b55;  /* linear-gradient(to right, #0a2945, #162e6d);*/
     color: white;
     align-content: center;
     text-align: center;
@@ -316,7 +321,7 @@ footer {
     }
     .top-right {
         /* margin-right: 50%; */
-        gap: 0.8rem;
+        gap: 1.3rem;
     }
 
     .heading {
@@ -369,12 +374,18 @@ footer {
         width: 20%;
     }
     .clg-degree {
+        font-size: 0.9rem;
         height: 2.5rem;
     }
+    .one-liner {
+        font-size: 0.9rem;
+    }
     .clg-layer2 {
+        font-size: 0.9rem;
         gap: 1rem;
     }
     .clg-last-layer {
+        font-size: 0.9rem;
         width: 100%;
         gap: 0.3rem;
     }
@@ -521,10 +532,10 @@ footer {
         font-size: 2rem;
     }
     .logo-text {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     .nav-icon, .nav-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .top-right {
         gap: 2rem;
